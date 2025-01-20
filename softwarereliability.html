@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AI APPROACH FOR RELIABILITY ESTIMATION OF SAFETY-CRITICAL SYSTEMS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Romith Bondada</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a>Welcome to my journey</a> </li>
+							<li><a> Bienvenue dans mon voyage</a></li>
+							<!--<li class="active"><a href="aboutme.html">Know me </a></li>
+							<li><a href="elements.html">Elements Reference</a></li>-->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/romith-bondada-428362257/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/romith05" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!--<span class="date">April 25, 2017</span>-->
+									<h1>AI APPROACH FOR RELIABILITY ESTIMATION OF SAFETY-CRITICAL SYSTEMS</h1>
+									<p>Software Defect Prediction is crucial for achieving reliability by reducing time and workload.
+                                        Detecting software faults early enhances software quality and reduces development costs, time, and effort.
+                                        Machine Learning (ML) algorithms, including Decision Trees and Logistic Regression, and deep learning models like MLP and CNN, play vital roles in Software Fault Prediction (SFP).
+                                        Deep Learning Models, including MLP, CNN, and RNN, have demonstrated exceptional performance in software reliability, similar to other key domains such as computer vision and natural language processing.
+                                        A new Deep Learning Model and RNN are implemented in this study, resulting in efficient performance modifications of existing deep learning models.
+                                        Experimental study conducted on four datasets from the NASA open data portal shows significant performance improvements, with MLP achieving improvement rates of 59% for PC1 and 143% for CM1, and CNN showing improvement rates of 9% and 2% for PC1 and CM1, respectively.
+                                        </p>
+								</header>
+								<div class="image main"><img src="images\Screenshot 2025-01-13 221921.png" alt="" /></div>
+
+									<h3>IMPLEMENTATION</h3>
+									
+									<h4>HYPER PARAMETERS</h4> During the training phase, various hyper-parameters will be adjusted to analyze their effect on performance. Tuning these hyper-parameters is crucial to selecting the optimal settings for achieving desired results. Optimal parameter selection is essential, yet it is often considered a complex aspect of network training. Moreover, hyperparameter tuning often relies more on practical experience rather than purely theoretical knowledge. <br />
+									<h5>Number of Epochs</h5> The Universal rule dictates that the more you train a model, the more it gets adjusted to different data instances which helps it detect various types of data provided while testing. The over-fitting problem is not to be ignored as there is a possibility that this leads to a decrease in the efficiency of the model.
+                                    <br />
+									<h5>Activation Function</h5> The output of a neuron is determined by the activation function on the input given. Each activation function performs a distinct mathematical operation on its input
+
+                                    1.Sigmoid: Frequently used in back-propagation. The range is from 0 to 1.<br/>
+                                    
+                                                                                                                   <br/> S(x) = 1/(1 + e^−x)<br/>
+                                    2.    Hyperbolic Tangent (tanh): is defined as the ratio between the hyperbolic sine and the cosine  functions<br/>
+                                    
+                                                                                                          Tanh(x)=(e^x) −( e^−x)/(e^x) +( e^−x)<br/>
+                                    
+                                    3.    Rectified linear units (ReLUs): used as an activation function for the hidden layers in a Deep Neural Network, it becomes widely used to train a much deeper network than Sigmoid or Tanh activation functions. ReLU provides faster and more efficient learning for Deep Neural Network(DNN) over complex, high-dimensional data.<br/>
+                                    
+                                                                                                                  f(x) = max(0, x)<br/>
+                                    
+                                    4.    Swish: Its results are similar to or significantly outperforms ReLU on the deep neural network across a variety of challenging datasets. 
+                                    <br/>f (x) = x ∗ Sigmoid(x)
+                                    <br />
+									<h5>Optimizer</h5> 1. Adam (Adaptive Moment Estimation): An adaptive learning rate optimization algorithm that has the benefits of both momentum and RMSProp. It computes adaptive learning rates for each parameter, based on estimates of the first and second moments of the gradients.
+
+                                    <br />2. Adgrad (Adaptive Gradient Algorithm): An adaptive learning rate optimization algorithm that adjusts the learning rates of individual parameters based on historical gradients. It allocates larger learning rates to in-
+                                    frequently updated parameters and smaller rates to frequently updated parameters.
+                                    
+                                    <br />3. SGD (Stochastic Gradient Descent): A simple yet effective optimization algorithm which is commonly used in training neural networks. It updates the model parameters based on the gradient of the loss function concerning the training data
+                                    <br />
+                                    <div class="image main"><img src="images\Screenshot 2025-01-13 222941.png" alt="" /></div>
+                                    <h5>IMPROVEMENT RATE</h5>
+                                    <div class="image main"><img src="images\Screenshot 2025-01-14 085255.png" alt="" /></div>
+									 
+									<p>MLP exhibits a substantial improvement rate of 59.24% on the PC1 dataset, indicating significant progress over the prior model.
+                                        CNN demonstrates a more modest improvement rate of 9.07% on the PC1 dataset.
+                                        On the CM1 dataset, MLP showcases a remarkable improvement rate of 143.24%, indicating substantial enhancement compared to the previous model.
+                                        Conversely, CNN shows a comparatively minimal improvement rate of 2.20% on the CM1 dataset.
+                                        These findings underscore the effectiveness of the MLP model in achieving notable advancements across both datasets, positioning it as a favorable choice for software fault prediction tasks.
+                                        </p>
+									
+									<p>MLP demonstrates significant improvement in performance compared to CNN, which shows only minor enhancements.
+                                        MLP's superior performance across various metrics, aside from accuracy, makes it the preferred model for Software Fault Prediction (SFP), particularly in handling imbalanced datasets.
+                                        RNN's performance is subpar due to its sequential data handling nature, where non-sequential metric data results in noise and deteriorated performance.
+                                        The study suggests that the use of software metric data for fault prediction has reached its peak, as advancements in software development and the influence of artificial intelligence render these metrics less viable.
+                                        Future work could focus on semantic understanding of code rather than static code analysis and metrics.
+                                        </p>
+									Supervised by <a href="https://srmap.edu.in/faculty/dr-krovi-raja-sekhar/">Dr Raja Shekar Krovi</a>
+									<h5>Contributors</h5>
+									I would like to acknowledge the contributions of my research associates<br />
+									<a href="https://www.linkedin.com/in/sukanya-karasala-677659243/">Sukanya Karasala</a><br />
+									<a href="https://www.linkedin.com/in/aman-abdul/">Aman Abdul Rasheed</a><br />
+									<a href="https://www.linkedin.com/in/sai-sushrooth-chand-pudari-bb87b2296/">Sai Sushrooth Pudari</a>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!--<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>-->
+						</section>
+						<!--<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>-->
+
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/romith-bondada-428362257/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/romith05" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

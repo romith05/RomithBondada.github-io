@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Comment Toxicity Classification Using BERT and GNN</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Romith Bondada</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a>Welcome to my journey</a> </li>
+							<li><a> Bienvenue dans mon voyage</a></li>
+							<!--<li class="active"><a href="aboutme.html">Know me </a></li>
+							<li><a href="elements.html">Elements Reference</a></li>-->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/romith-bondada-428362257/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/romith05" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!--<span class="date">April 25, 2017</span>-->
+									<h1>Comment Toxicity Classification Using BERT and GNN</h1>
+									<p>The major objective of this study is to develop a language model to recognize and 
+									categorize the toxic comments that might be found on social media. A challenge with 
+									classifying harmful remarks is that a single comment can belong to more than one 
+									category or label. Therefore, traditional approaches like Naive Bayes, SVM, or others 
+									cannot handle this type of categorization effectively because a model needs to 
+									comprehend language context in order to analyse poisonous comments. Therefore, the 
+									study included the use of BERT and GNN. BERT (Bidirectional Encoder Representation 
+									from Transformers), which can learn language in both directions, and GNN (Graph 
+									Neural Network) Model, which is a clever technique to train a graph model. The BERT is 
+									used to extract semantics and these semantics are fed to GNN. When the two models are 
+									trained together they give the best results for comment classification. 
+                                        </p>
+									<p>Toxicity in online communication has become a prevalent issue in recent years, with the 
+										increasing use of social media platforms and online forums. Toxic comments not only 
+										have the potential to harm individuals and groups, but also create a negative 
+										environment for discussion and debate. As a result, the automatic detection and 
+										classification of toxic comments has become an important area of research. It has a 
+										negative impact on user’s mental health also and the participation of people from 
+										different backgrounds when hateful and insulting language is used on social media sites. 
+										Historically, categorical datasets with large amounts of data have been used extensively 
+										in automatic foul language identification. The severity of offensiveness varies, though. 
+										The proposed GNN and BERT architecture gives the accurate result. The toxicity score is 
+										calculated in the range of 0 to 1.</p>
+								</header>
+								
+
+									<h3>Methodology:</h3>
+									<div class="image main"><img src="images\Screenshot 2025-01-18 181912.png" alt="" /></div>
+									<p>Advancing to the proposed methodology, you can see the model architecture in fig(2.1). 
+										The model architecture reveals that we are working with generative AI models, 
+										specifically BERT (Bidirectional Encoder Representations from Transformers) and GAN 
+										(Generative Adversarial Networks). These models are referred to as generative 
+										models because they can anticipate and generate new words based on words they have 
+										previously observed. Now, by adding a small amount of labelled data to the equation, 
+										you can tune them to carry out common NLP tasks like classification or named entity 
+										recognition. This process is known as tuning, and it is essentially what we are doing when 
+										we use BERT to detect toxicity levels in the input comments. If they exceed the toxicity 
+										threshold (>0.5), they are then forwarded to GAN model for detoxification. </p>
+									<h3>BERT Workflow</h3>
+									<div class="image main"><img src="images\Screenshot 2025-01-18 183626.png" alt="" /></div>
+									<h3> Graph Neural Network (GNN):</h3> 
+									<p>With links represented as edges and entities as nodes, graph-structured data can be 
+										handled effectively with the help of Graph Neural Networks (GNNs). They are 
+										excellent at identifying complex relationships and patterns in relational datasets, which 
+										makes them useful for a variety of applications, including molecular chemistry, social 
+										network analysis, and recommendation systems. Fundamentally, GNNs use iterative 
+										information aggregation to update node embeddings by taking into account 
+										information from nearby nodes as well as local features. Convolutional operations on 
+										graphs are used by Graph Convolutional Networks (GCNs), a well-liked GNN 
+										architecture, to efficiently spread information. Managing graphs of different length and 
+										preventing over-smoothing are two problems with GNNs. Still, research is being done 
+										to improve GNNs and create variations such as Graph Attention Networks (GAT) to 
+										increase their capabilities, making them more and more</p>
+									<div class="image main"><img src="images\Screenshot 2025-01-18 182619.png">alt="" /></div>
+									<p>During training, backpropagation is utilized to update model parameters. Adjustments 
+										to weights are made using arithmetic operations involving gradients and learning rates, 
+										ensuring that both semantic and bias-related information contribute to the learning 
+										process. </p>
+									Supervised by <a href="https://srmap.edu.in/faculty/dr-ashu-abdul/">Dr Ashu Abdul</a>
+									<h5>Contributors</h5>
+									I would like to acknowledge the contributions of my research associates<br />
+									<a href="https://www.linkedin.com/in/sukanya-karasala-677659243/">Sukanya Karasala</a><br />
+									<a href="https://www.linkedin.com/in/pavan-teja-reddy-kallam-/">Pavan Teja Reddy Kallam</a><br />
+									<a href="https://www.linkedin.com/in/susmithad/">Susmitha Dudipalli</a>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!--<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>-->
+						</section>
+						<!--<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>-->
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/romith-bondada-428362257/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/romith05" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

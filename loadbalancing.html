@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Load balancing with avalanche case Sandpile model</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Romith Bondada</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a>Welcome to my journey</a> </li>
+							<li><a> Bienvenue dans mon voyage</a></li>
+							<!--<li class="active"><a href="aboutme.html">Know me </a></li>
+							<li><a href="elements.html">Elements Reference</a></li>-->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/romith-bondada-428362257/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/romith05" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!--<span class="date">April 25, 2017</span>-->
+									<h1>Load balancing with avalanche case Sandpile model</h1>
+									<p>This research studies a self-organized criticality (SOC) model called Sandpile for 
+                                        dynamically load-balancing tasks. Just like grains, tasks arrive and pile up on the 
+                                        server. Just like a sand heap, when it reaches a certain level, it collapses and initiates 
+                                        an avalanche of migrating tasks, thus producing load-balancing. The abundance of 
+                                        such avalanches is in a power-law relation to their size. It is scale-invariant behavior 
+                                        that emerges without requiring tuning or control parameters. In other words, large 
+                                        catastrophic avalanches occur very rarely, but small ones happen frequently. When 
+                                        tasks are not clairvoyant, an emergent pattern like this can be efficiently adapted for 
+                                        non-clairvoyant scheduling while the task's features are not known, the load is 
+                                        balanced among computing resources to maximize performance</p>
+                                    <p>Energy efficiency is one of the main research areas in computer science today. Power 
+                                        demands in large-scale computing infrastructures have exploded as a result of 
+                                        flourishing technologies, such as cloud computing, and energy consumption has 
+                                        become a limiting factor to its further development. 
+                                        A part of the problem is the current technology, which has not yet devised ways to 
+                                        keep energy consumption proportional to the number of services provided. 
+                                        Researchers are dealing with this problem, which has become a major technological 
+                                        driver in recent years - the design of large-scale distributed systems. 
+                                        According to Brown and Reams' research, there does appear to be a control 
+                                        mechanism in this type of problem, which is best approached as an optimization one 
+                                        where "a system consumes the minimum amount of energy required to perform any 
+                                        task." 
+                                        It is impossible to overstate the importance of this statement because it enables us to 
+                                        formally define energy efficiency in terms of a scheduling problem that includes 
+                                        specific—and possibly incompatible—objective functions like energy consumption, 
+                                        resource utilization, or quality of service (QoS). In other words, energy-efficient 
+                                        computing can be formulated as a multi-objective scheduling problem.</p>
+								</header>
+
+									<h3>Methodology</h3>
+                                    <p>Sandpile load balancing is an approach to edge computing that uses a distributed 
+                                        network of computing nodes to manage the workload of an application. It works by 
+                                        distributing a load of an application across multiple nodes in the network, allowing 
+                                        for more efficient and reliable data processing. 
+                                        The basic idea behind sandpile load balancing is to divide an application’s workload 
+                                        into small pieces, called grains, and then distribute these grains across the nodes in 
+                                        the network. Each node is then responsible for processing its own grains and any 
+                                        grains sent to it by other nodes. This allows for a more efficient and reliable way to 
+                                        process data, as the workload is spread out across multiple nodes. 
+                                        In order to make sure that the workload is distributed evenly across the nodes, the 
+                                        sandpile algorithm uses a technique called “thresholding”. This technique works by 
+                                        setting a threshold for the number of grains that each node can handle. When the 
+                                        number of grains on a node exceeds this threshold, the node sends some of its grains 
+                                        to other nodes in the network. This helps to ensure that the workload is evenly 
+                                        distributed across the nodes. 
+                                        The diagram below illustrates the sandpile load balancing technique.</p>
+                                    <div class="image main"><img src="images\Screenshot 2025-01-18 191155.png" alt="" /></div>
+                                    <p>In the diagram, each node is represented by a square. The nodes are connected to each 
+                                        other by a network. As the number of grains on a node increases, the node sends some 
+                                        of its grains to other nodes in the network, ensuring that the workload is evenly 
+                                        distributed across the nodes. 
+                                        7 
+                                        The sandpile load balancing technique is an effective way to manage the workload of 
+                                        an application in edge computing. It helps to ensure that the workload is evenly 
+                                        distributed across the nodes, allowing for more efficient and reliable processing of 
+                                        data.</p>
+									<h3>Approach</h3> 
+                                    <p>The solution for the balancing of the load stems from the avalanche case when there 
+                                        is excess snow on a mountain for example. The balancing of the load can be achieved 
+                                        by shifting the tasks which arrive on a particular server to its adjacent servers which 
+                                        helps in completing the tasks without any starvation. 
+                                        The solution consists of a grid or a 2-D matrix that represents the servers. Each server 
+                                        has a value associated with it representing the time capacity. Once the task gets 
+                                        placed, the time gets decremented. The tasks get placed until the value becomes zero 
+                                        or less than zero. If the value gets zero, the task gets migrated to its adjacent servers. 
+                                        Different arrays are considered for keeping track of the tasks and their task time. 
+                                        If the task arrives at a server and the server does not have the capacity to complete the 
+                                        task due to any constraint then the task gets placed into the adjacent servers. If the 
+                                        servers are not available too then the task just slides to the next server and repeats the 
+                                        process until there are no servers left. 
+                                        We have discussed two cases where in the first one the latest task gets migrated but 
+                                        in the second case, we find a task in that particular server that makes the server work 
+                                        at its best capacity and replaces it with the latest task. 
+                                        The second case deals with the efficient replacement of the task which helps in better 
+                                        task placement among the servers. </p>
+                                    <h4>Case 1:</h4> 
+                                    <p>The case 1 deals with the migration of the arriving task whenever an avalanche case occurs.
+                                        The arriving tasks are migrated to the adjacent positions of the current server. If it is not possible, the task is then migrated to the next adjacent server of the second server. 
+                                        </p>
+                                    <h4>Case 2:</h4>
+                                    <p>The case 2 deals with the migration of the tasks that are already in the current server to efficiently use the resources.
+                                        The tasks are replaced and moved to the adjacent servers so that the current server’s utilization is maximum.
+                                        If it is not possible, the task is then migrated to the next adjacent server of the second server.
+                                        
+                                        </p>
+                                    <h3>Result</h3>
+                                    <div class="image main"><img src="images\Screenshot 2025-01-18 191456.png" alt="" /></div>
+                                    <div class="image main"><img src="images\Screenshot 2025-01-18 191529.png" alt="" /></div>
+                                    <p>In this research, we describe a self-organized criticality model called Sandpile, a 
+                                        cellular automaton operating in a critical state between order and chaos, which serves 
+                                        as the foundation for an online and decentralized scheduler. Tasks arrive at resources 
+                                        in such a system and build up like sand grains. A pile topples and an avalanche may 
+                                        begin when an agent notices that it has more work to do than two of its neighbors 
+                                        combined. This avalanche may spread across the entire system until a new 
+                                        equilibrium is reached. 
+                                        With the help of a straightforward mechanism, we demonstrate how the decentralized 
+                                        execution of the sandpile can self-organizingly adapt the number of active resources 
+                                        to the specifics of incoming workloads. Whenever a site has more tasks than it can 
+                                        handle, the site distributes those tasks to its neighbors. Given that every site follows 
+                                        the same rule, a straightforward task redistribution could trigger an avalanche that 
+                                        spreads until the system reaches a new equilibrium. 
+                                        This system's emergent load-balancing behavior is examined in terms of two 
+                                        competing goals: decreasing energy consumption (i.e., the number of active resources 
+                                        over time) and maximizing QoS (i.e., the system's average waiting time for tasks). The 
+                                        experiment carried out in this context demonstrates that the strategy is capable of 
+                                        converging towards almost ideal trade-offs where energy efficiency and QoS are 
+                                        maximized.</p>
+									Supervised by <a href="https://www.linkedin.com/in/dr-chinmaya-kumar-swain-77b358128/?originalSubdomain=in">Dr. Chinmaya Kumar Swain</a>
+									<h5>Contributors</h5>
+									I would like to acknowledge the contributions of my research associates<br />
+									<a href="https://www.linkedin.com/in/hemantha-krishna-challa/">Hemantha Krishna Challa </a><br />
+									
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!--<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>-->
+						</section>
+						<!--<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>-->
+
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/romith-bondada-428362257/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/romith05" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
