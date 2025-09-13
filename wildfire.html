@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alberta Wildfire Ignition Prediction Dashboard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+			<header id="header">
+				<a href="index.html" class="logo">Romith Bondada</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="visualization.html">Visualizations</a></li>
+					<li><a href="ml.html">Machine Learning</a></li>
+					<li><a href="pipeline.html">Data Pipeline</a></li>
+					<li><a href="deployment.html">Deployment</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/romith-bondada-428362257/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/romith05/dba" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+					<header class="major">
+						<h1>Alberta Wildfire Ignition Prediction Dashboard</h1>
+						<p>
+							Wildfires are one of Alberta’s most severe natural hazards. This project delivers an interactive web application that predicts wildfire risk in real time by integrating <b>weather APIs, vegetation maps, water body data, and a Random Forest machine learning model</b>. With just a click on the map, users get a wildfire probability score within seconds.
+						</p>
+
+						<h3>✨ Objectives</h3>
+						<ol>
+							<li>Provide an interactive wildfire risk map for Alberta 🗺️🔥</li>
+							<li>Integrate geospatial (GeoTIFF), weather, and vegetation data seamlessly</li>
+							<li>Deploy a containerized pipeline for fast, reproducible predictions</li>
+						</ol>
+
+						<h3>🧐 Key Insights</h3>
+						<ul>
+							<li>Random Forest Classifier achieves <b>94% accuracy</b> and <b>0.97 recall</b> for fire events.</li>
+							<li>Real-time weather data (temperature, humidity, wind speed) enriches predictions.</li>
+							<li>Water bodies are instantly flagged as zero risk to avoid false alarms.</li>
+						</ul>
+
+						<h3>🎥 Demo Video</h3>
+						<a href="https://tinyurl.com/Wildfire-demo" target="_blank">
+						<img src="images\demo-thumbnail.png" alt="Wildfire Demo Video" 
+							style="width:100%; max-width:600px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.3);" />
+						</a>
+						<figcaption style="text-align:center; margin-top:6px;">
+						<i>Click the image to watch the full wildfire dashboard demo 🚀</i>
+						</figcaption>
+
+						<br>
+						<img src="images\pipeline.png" alt="Pipeline Architecture" style="width:100%; border-radius: 12px; margin-bottom: 20px;" />
+						<figcaption style="text-align:center;"><i>Pipeline architecture with Streamlit, Flask API, DuckDB, and AWS S3</i></figcaption>
+
+						<p>Check the full code, Docker setup, and instructions on <a href="https://github.com/romith05/dba">GitHub</a> 🚀</p>
+					</header>
+
+					<p>Developed under the course <b>DATA608 – Developing Big Data Applications</b></p>
+
+					<h5>🎉 Contributors</h5>
+					<p>
+						Team members who collaborated on this project:
+						<br><a href="https://www.linkedin.com/in/deepika-gollamandala-248166270/">Deepika Gollamandala</a><br />
+						<a href="https://www.linkedin.com/in/kajal-rahul-bhadauria-5997a716a/">Kajal Bhadauria</a><br />
+					</p>
+
+					<h4>💡 Final Thought</h4>
+					<p>This project shows how geospatial data, APIs, and ML can come together in a scalable pipeline to address real-world environmental challenges. Predicting wildfire risk isn’t just data science—it’s a tool for resilience and preparedness. 🌍🔥</p>
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>Calgary, AB</br>
+								Canada</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">romithjessie@gmail.com</a></p>
+							</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/romith-bondada-428362257/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/romith05" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Romith Bondada</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
