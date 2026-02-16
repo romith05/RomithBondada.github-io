@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Satisfaction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+			<header id="header">
+				<a href="index.html" class="logo">Romith Bondada</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="visualization.html">Data Visualizations </a></li>
+					<li><a href="statistical_Analysis.html">Satistical analyses</a></li>
+					<li><a href="DeepLearning.html">Machine Learning </a></li>
+					<li><a href="DSA.html">Data Structures</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/romith-bondada-428362257/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/romith05" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+					<header class="major">
+						<h1>Wildfire Ignition Prediction in Alberta</h1>
+                        <h8>Teaching Machines to Spot Fires Before They Start 🔥🛰️</h8>
+						<p>
+							Wildfires don’t send calendar invites. They erupt suddenly, spread aggressively, and leave devastating ecological and economic impacts behind. 
+		So I asked a simple but ambitious question: <b>Can we predict where a wildfire is likely to ignite before it actually does?</b>
+                        </p>
+                        
+                        <p>This project is my deep-dive into wildfire ignition prediction using high-resolution geospatial data and deep learning. 
+		By combining satellite-derived land features, weather data, terrain, and historical ignition records, I built a system that doesn’t just say 
+		“fire or no fire” — it learns <i>where</i> an ignition is most likely to happen, pixel by pixel.
+						</p>
+                        <h8>The Big Picture: Why This Matters 🌍</h8>
+                        We're talking about unearthing how things like:
+                        <p>
+		                    Canada experiences thousands of wildfires every year, and Alberta alone records over a thousand annually. 
+		                    As climate change extends fire seasons and increases extreme weather, early ignition detection has become critical for:
+                        </p>
+                        <ul>
+                                <li>Faster emergency response and resource allocation 🚒</li>
+                                <li>Reducing economic losses and environmental damage 🌲</li>
+                                <li>Supporting data-driven wildfire management decisions 📡</li>
+                            </ul>
+
+                            <h3>🧠 What I Built</h3>
+                            <p>
+                                I designed a <b>two-stage deep learning pipeline</b> using U-Net architectures that work together like a security checkpoint:
+                            </p>
+
+                            <ol>
+                                <li>
+                                    <b>Stage 1 – Patch-Level Detector:</b>  
+                                    A deep learning model scans 64×64 spatial patches and decides whether an ignition might exist anywhere in that region.
+                                </li>
+                                <li>
+                                    <b>Stage 2 – Spatial Refiner:</b>  
+                                    If Stage 1 raises a flag, a second U-Net zooms in to produce a high-resolution ignition probability map at 25 m resolution.
+                                </li>
+                            </ol>
+
+                            <p>
+                                This cascade design dramatically reduces false alarms while preserving extremely high recall — a critical requirement in wildfire prediction, 
+                                where missing an ignition is far more costly than raising a false alert.
+                            </p>
+
+                <h3>📊 Key Results</h3>
+                    <ul>
+                        <li><b>~94.5% patch-level recall</b> — almost every ignition region is detected</li>
+                        <li><b>~94% pixel-level recall</b> — ignition shapes are spatially well-captured</li>
+                        <li><b>Extremely low pixel false-positive rate</b> (~0.046%)</li>
+                        <li>Stable performance on fully unseen test years (2021–2023)</li>
+                    </ul>
+
+                    <p>
+                        These results demonstrate that a carefully designed two-stage architecture can handle 
+                        the extreme class imbalance inherent in wildfire ignition prediction while remaining operationally practical.
+                    </p>
+
+                    <h3>🖼️ Interpretation</h3>
+                    <p>From raw terrain to ignition probability heatmaps — here’s what the model sees:</p>
+
+                    
+                    <img src="images/wildfire heatmap.png" alt="Ignition probability over terrain" style="width:100%; border-radius: 12px; margin-bottom: 20px;" />
+
+                    <h3>🚀 What’s Next</h3>
+                    <p>
+                        This project is designed to scale. Future extensions include:
+                    </p>
+
+                    <ul>
+                        <li>Incorporating multi-day weather sequences (temporal modeling)</li>
+                        <li>Cause-specific ignition models (human vs lightning)</li>
+                        <li>Real-time inference via APIs and dashboards</li>
+                        <li>Cloud-native deployment with GPU acceleration</li>
+                    </ul>
+
+                    <p>
+                        The ultimate goal? A real-time wildfire intelligence system that supports early warning, 
+                        smarter resource deployment, and better protection of communities and ecosystems.
+                    </p>
+
+                    <p>
+                        Want the full technical breakdown, code, and experiments?  
+                        <a href="https://github.com/romith05/wildfire">Explore the project on GitHub</a> 🔥📊
+                    </p>
+					<p>Supervised by <a href="https://www.linkedin.com/in/usman-alim-16b8a138/">Usman Alim</a></p>
+
+					
+
+					
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>Calgary, AB</br>
+								Canada</p>
+							</section>
+							<!--<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>-->
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">romithjessie@gmail.com</a></p>
+							</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/romith-bondada-428362257/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/romith05" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Romith Bondada</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
